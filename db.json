@@ -1,0 +1,35 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "title": "Inception",
+        "poster": "https://imageurl.com/inception.jpg",
+        "synopsis": "A skilled thief enters dreams to steal secrets.",
+        "rent_price": 3.99,
+        "purchase_price": 12.99
+      },
+      {
+        "id": 2,
+        "title": "The Dark Knight",
+        "poster": "https://imageurl.com/dark-knight.jpg",
+        "synopsis": "Batman battles the Joker in Gotham.",
+        "rent_price": 3.99,
+        "purchase_price": 14.99
+      }
+    ],
+    "tvshows": [
+      {
+        "id": 1,
+        "title": "Breaking Bad",
+        "poster": "https://imageurl.com/breaking-bad.jpg",
+        "synopsis": "A chemistry teacher turns into a meth producer."
+      },
+      {
+        "id": 2,
+        "title": "Stranger Things",
+        "poster": "https://imageurl.com/stranger-things.jpg",
+        "synopsis": "A group of kids uncovers supernatural mysteries."
+      }
+    ]
+  }
+  

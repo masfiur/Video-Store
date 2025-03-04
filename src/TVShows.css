@@ -1,0 +1,47 @@
+/* General Container Styling */
+.tvshows-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grid Layout */
+  .tvshows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Individual TV Show Card */
+  .tvshow-card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .tvshow-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+  }
+  
+  .tvshow-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .tvshow-card p {
+    color: #ff5733;
+    font-weight: bold;
+  }
+  
+  /* Hover Effect */
+  .tvshow-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 87, 51, 0.5);
+  }
+  

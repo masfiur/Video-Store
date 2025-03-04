@@ -1,0 +1,53 @@
+.tvshow-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tvshow-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .posters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .small-poster {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+  
+  .large-poster {
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+  
+  .synopsis {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .prices {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .price-item {
+    font-size: 1.5em;
+  }
+  
+  .price-label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
