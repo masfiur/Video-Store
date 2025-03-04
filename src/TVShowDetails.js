@@ -3,18 +3,22 @@ import { useParams } from "react-router-dom";
 import "./TVShowDetails.css";
 
 const TVShowDetails = () => {
-  const { id } = useParams(); // Get TV show ID from URL
+  const { id } = useParams();
   const [tvShow, setTvShow] = useState(null);
   const [loading, setLoading] = useState(true);
+  const API_KEY = "9c026d23ec93ec6c389900e105ae5e41";
 
   useEffect(() => {
-    console.log("Fetching TV show with ID:", id);
-
-    fetch("http://localhost:8001/tvshows")
+    fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=${API_KEY}&language=en-US`)
       .then((response) => response.json())
       .then((data) => {
-        const foundTvShow = data.find((tv) => tv.id.toString() === id);
-        setTvShow(foundTvShow || null);
+        setTvShow({
+          title: data.name, // TMDb uses 'name' for TV shows
+          poster: `https://image.tmdb.org/t/p/w500${data.poster_path}`, // TV show poster
+          synopsis: data.overview,
+          rentPrice: "2.99", // Example price (TMDb does not provide pricing)
+          purchasePrice: "9.99", // Example price
+        });
         setLoading(false);
       })
       .catch((error) => {
@@ -23,13 +27,8 @@ const TVShowDetails = () => {
       });
   }, [id]);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
-  if (!tvShow) {
-    return <p>TV Show not found.</p>;
-  }
+  if (loading) return <p>Loading...</p>;
+  if (!tvShow) return <p>TV Show not found.</p>;
 
   return (
     <div className="tvshow-details">
@@ -41,11 +40,11 @@ const TVShowDetails = () => {
       <div className="prices">
         <div className="price-item">
           <span className="price-label">Rent:</span>
-          <span className="price-value">${tvShow.rentPrice || "N/A"}</span>
+          <span className="price-value">${tvShow.rentPrice}</span>
         </div>
         <div className="price-item">
           <span className="price-label">Buy:</span>
-          <span className="price-value">${tvShow.purchasePrice || "N/A"}</span>
+          <span className="price-value">${tvShow.purchasePrice}</span>
         </div>
       </div>
     </div>

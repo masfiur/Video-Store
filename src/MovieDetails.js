@@ -6,14 +6,20 @@ const MovieDetails = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
+  const API_KEY = "9c026d23ec93ec6c389900e105ae5e41";
 
   useEffect(() => {
-    console.log("Fetching movie with ID:", id);
-    fetch(`http://localhost:8001/movies`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`)
       .then((response) => response.json())
       .then((data) => {
-        const foundMovie = data.find((m) => m.id.toString() === id);
-        setMovie(foundMovie || null);
+        setMovie({
+          title: data.title,
+          smallPoster: `https://image.tmdb.org/t/p/w200${data.poster_path}`, // Small poster
+          largePoster: `https://image.tmdb.org/t/p/w500${data.backdrop_path}`, // Large poster
+          synopsis: data.overview,
+          rentPrice: "3.99", // Example price (TMDb does not provide pricing)
+          purchasePrice: "14.99", // Example price
+        });
         setLoading(false);
       })
       .catch((error) => {
@@ -22,13 +28,8 @@ const MovieDetails = () => {
       });
   }, [id]);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
-  if (!movie) {
-    return <p>Movie not found.</p>;
-  }
+  if (loading) return <p>Loading...</p>;
+  if (!movie) return <p>Movie not found.</p>;
 
   return (
     <div className="movie-details">
