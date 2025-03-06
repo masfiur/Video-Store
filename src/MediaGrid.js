@@ -10,7 +10,7 @@ const MediaGrid = ({ title, mediaList, mediaType }) => {
         {mediaList.map((item) => (
           <Link to={`/${mediaType}/${item.id}`} key={item.id} className="media-card">
             <img src={item.image} alt={item.title} />
-            <h3>{item.title}</h3>
+            {/* <h3>{item.title}</h3> */}
           </Link>
         ))}
       </div>
