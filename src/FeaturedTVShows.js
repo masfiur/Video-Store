@@ -1,33 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import FeaturedMedia from "./FeaturedMedia"; // Import reusable component
 
-const tvShows = [
-  {
-    id: 1,
-    title: "Stranger Things",
-    image: "https://example.com/strangerthings-poster.jpg",
-    description: "A group of kids in the 80s face supernatural occurrences.",
-  },
-  {
-    id: 2,
-    title: "The Witcher",
-    image: "https://example.com/witcher-poster.jpg",
-    description: "Geralt of Rivia battles monsters in a dark fantasy world.",
-  },
-  {
-    id: 3,
-    title: "Money Heist",
-    image: "https://example.com/moneyheist-poster.jpg",
-    description: "A criminal mastermind leads a heist on the Royal Mint of Spain.",
-  },
-  {
-    id: 4,
-    title: "Breaking Bad",
-    image: "https://example.com/breakingbad-poster.jpg",
-    description: "A high school teacher turns to cooking meth to secure his family's future.",
-  },
-];
+const FeaturedTVShows = () => {
+  const [featuredTVShows, setFeaturedTVShows] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-const FeaturedTVShows = () => <FeaturedMedia title="Featured TV Shows" mediaList={tvShows} />;
+  useEffect(() => {
+    // Fetch TV shows from your API using Promise chaining
+    fetch("https://video-store-api.vercel.app/tvShows")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Select 4-6 TV shows to feature
+        const randomTVShows = data
+          .sort(() => 0.5 - Math.random()) // Shuffle the array
+          .slice(0, 6);  // Take the first 6 items
+        
+        setFeaturedTVShows(randomTVShows);
+        setLoading(false);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+        console.error("Error fetching featured TV shows:", err);
+      });
+  }, []);
+
+  if (loading) return <div className="loading">Loading featured TV shows...</div>;
+  if (error) return <div className="error">Error loading TV shows: {error}</div>;
+
+  return <FeaturedMedia title="Featured TV Shows" mediaList={featuredTVShows} />;
+};
 
 export default FeaturedTVShows;

@@ -1,3 +1,4 @@
+/* Featured Media Section */
 .featured-media {
   padding: 40px 20px;
   background-color: #0f0f0f;
@@ -69,15 +70,29 @@
   text-overflow: ellipsis;
 }
 
-.media-card p {
+/* Star Rating System */
+.rating {
+  display: flex;
+  align-items: center;
   margin: 0 15px 15px;
+  font-size: 1rem;
+  color: #ffd700;
+}
+
+.star {
+  font-size: 1.2rem;
+  color: #444;
+  transition: color 0.3s;
+}
+
+.star.filled {
+  color: #ffd700;
+}
+
+.rating-value {
+  margin-left: 8px;
   font-size: 0.9rem;
   color: #cccccc;
-  flex-grow: 1;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 /* Hover Effect */
@@ -87,7 +102,8 @@
 }
 
 /* Loading and Error Styles */
-.loading, .error {
+.loading,
+.error {
   text-align: center;
   padding: 40px;
   font-size: 1.2rem;
@@ -98,13 +114,13 @@
   color: #ff6b6b;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .media-grid {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
   }
-  
+
   .featured-media h2 {
     font-size: 1.6rem;
   }
@@ -115,15 +131,21 @@
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 15px;
   }
-  
+
   .media-card h3 {
     font-size: 1rem;
     margin: 10px 10px 5px;
   }
-  
-  .media-card p {
+
+  .rating {
+    font-size: 0.9rem;
+  }
+
+  .star {
+    font-size: 1rem;
+  }
+
+  .rating-value {
     font-size: 0.8rem;
-    margin: 0 10px 10px;
-    -webkit-line-clamp: 2;
   }
 }

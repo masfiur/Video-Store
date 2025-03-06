@@ -1,43 +1,101 @@
-.media-container {
-    padding: 20px;
-    text-align: center;
+.movie-details {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.posters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.large-poster {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.synopsis {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.price-item {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #7f8c8d;
+}
+
+.price-value {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.movie-info {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.movie-info p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.movie-info strong {
+  color: #34495e;
+  margin-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .movie-title {
+    font-size: 2em;
   }
   
-  /* Grid Layout */
-  .media-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+  .prices {
+    flex-direction: column;
+    gap: 15px;
   }
   
-  /* Clickable Movie/TV Show Card */
-  .media-card {
-    display: block;
-    background: #222;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    color: white;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    text-decoration: none;
+  .synopsis {
+    font-size: 1.1em;
   }
-  
-  .media-card img {
-    width: 100%;
-    border-radius: 8px;
-    height: auto;
-  }
-  
-  .media-card h3 {
-    margin: 10px 0 5px;
-    font-size: 1.2rem;
-  }
-  
-  /* Hover Effect */
-  .media-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.5);
-  }
-  
+}

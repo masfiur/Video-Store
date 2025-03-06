@@ -1,7 +1,22 @@
 import React from "react";
-import "./FeaturedMedia.css"; // Common CSS file for styling
+import "./FeaturedMedia.css";
 
 const FeaturedMedia = ({ title, mediaList }) => {
+  const renderStars = (rating) => {
+    const maxStars = 5;
+    const filledStars = Math.round((rating / 10) * maxStars); // Assuming ratings are out of 10
+    return (
+      <div className="rating">
+        {[...Array(maxStars)].map((_, index) => (
+          <span key={index} className={index < filledStars ? "star filled" : "star"}>
+            ★
+          </span>
+        ))}
+        <span className="rating-value">{rating}/10</span>
+      </div>
+    );
+  };
+
   return (
     <section className="featured-media">
       <h2>{title}</h2>
@@ -10,7 +25,7 @@ const FeaturedMedia = ({ title, mediaList }) => {
           <div key={item.id} className="media-card">
             <img src={item.image} alt={item.title} className="media-image" />
             <h3>{item.title}</h3>
-            <p>{item.description}</p>
+            {renderStars(item.rating)}
           </div>
         ))}
       </div>
