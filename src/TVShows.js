@@ -5,7 +5,7 @@ const TVShows = () => {
   const [tvShows, setTvShows] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8002/tvShows") // Fetching from json-server
+    fetch("https://video-store-api.vercel.app/tvShows") // Fetching from json-server
       .then((response) => response.json())
       .then((data) => setTvShows(data))
       .catch((error) => console.error("Error fetching TV shows:", error));

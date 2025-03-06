@@ -1,124 +1,164 @@
 {
   "movies": [
     {
-      "id": 696506,
-      "title": "Mickey 17",
-      "image": "https://image.tmdb.org/t/p/w500/lrCcovGRcuv8Z1v3ae1ZH5Ird05.jpg",
-      "description": "Unlikely hero Mickey Barnes finds himself in the extraordinary circumstance of working for an employer who demands the ultimate commitment to the job… to die, for a living."
-    },
-    {
       "id": 1064213,
       "title": "Anora",
       "image": "https://image.tmdb.org/t/p/w500/qh8m8Udz0sCa5gy9VaqfHPh0yPM.jpg",
-      "description": "A young sex worker from Brooklyn gets her chance at a Cinderella story when she meets and impulsively marries the son of an oligarch. Once the news reaches Russia, her fairytale is threatened as his parents set out to get the marriage annulled."
+      "description": "A young sex worker from Brooklyn gets her chance at a Cinderella story when she meets and impulsively marries the son of an oligarch. Once the news reaches Russia, her fairytale is threatened as his parents set out to get the marriage annulled.",
+      "rating": 7.1,
+      "genres": "Drama, Comedy, Romance"
     },
     {
-      "id": 1302916,
-      "title": "Heart Eyes",
-      "image": "https://image.tmdb.org/t/p/w500/4kLK3cl4MbrjVFDQXb9PT11ZaV4.jpg",
-      "description": "When the \"Heart Eyes Killer\" strikes Seattle, a pair of co-workers pulling overtime on Valentine's Day are mistaken for a couple by the elusive couple-hunting killer. Now, they must spend the most romantic night of the year running for their lives."
+      "id": 696506,
+      "title": "Mickey 17",
+      "image": "https://image.tmdb.org/t/p/w500/lrCcovGRcuv8Z1v3ae1ZH5Ird05.jpg",
+      "description": "Unlikely hero Mickey Barnes finds himself in the extraordinary circumstance of working for an employer who demands the ultimate commitment to the job… to die, for a living.",
+      "rating": 7.2,
+      "genres": "Science Fiction, Comedy, Adventure, Action"
     },
     {
       "id": 823219,
       "title": "Flow",
       "image": "https://image.tmdb.org/t/p/w500/imKSymKBK7o73sajciEmndJoVkR.jpg",
-      "description": "A solitary cat, displaced by a great flood, finds refuge on a boat with various species and must navigate the challenges of adapting to a transformed world together."
+      "description": "A solitary cat, displaced by a great flood, finds refuge on a boat with various species and must navigate the challenges of adapting to a transformed world together.",
+      "rating": 8.323,
+      "genres": "Animation, Fantasy, Adventure"
     },
     {
-      "id": 1084199,
-      "title": "Companion",
-      "image": "https://image.tmdb.org/t/p/w500/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
-      "description": "During a weekend getaway at a secluded lakeside estate, a group of friends finds themselves entangled in a web of secrets, deception, and advanced technology. As tensions rise and loyalties are tested, they uncover unsettling truths about themselves and the world around them."
-    },
-    {
-      "id": 549509,
-      "title": "The Brutalist",
-      "image": "https://image.tmdb.org/t/p/w500/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
-      "description": "Escaping post-war Europe, visionary architect László Toth arrives in America to rebuild his life. On his own in a strange new country, a wealthy industrialist recognizes his talent. But power and legacy come at a heavy cost..."
+      "id": 1302916,
+      "title": "Heart Eyes",
+      "image": "https://image.tmdb.org/t/p/w500/4kLK3cl4MbrjVFDQXb9PT11ZaV4.jpg",
+      "description": "When the \"Heart Eyes Killer\" strikes Seattle, a pair of co-workers pulling overtime on Valentine's Day are mistaken for a couple by the elusive couple-hunting killer. Now, they must spend the most romantic night of the year running for their lives.",
+      "rating": 6.1,
+      "genres": "Horror, Comedy, Mystery"
     },
     {
       "id": 950396,
       "title": "The Gorge",
       "image": "https://image.tmdb.org/t/p/w500/7iMBZzVZtG0oBug4TfqDb9ZxAOa.jpg",
-      "description": "Two highly trained operatives grow close from a distance after being sent to guard opposite sides of a mysterious gorge. When an evil below emerges, they must work together to survive what lies within."
+      "description": "Two highly trained operatives grow close from a distance after being sent to guard opposite sides of a mysterious gorge. When an evil below emerges, they must work together to survive what lies within.",
+      "rating": 7.771,
+      "genres": "Romance, Science Fiction, Thriller"
+    },
+    {
+      "id": 1084199,
+      "title": "Companion",
+      "image": "https://image.tmdb.org/t/p/w500/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
+      "description": "During a weekend getaway at a secluded lakeside estate, a group of friends finds themselves entangled in a web of secrets, deception, and advanced technology. As tensions rise and loyalties are tested, they uncover unsettling truths about themselves and the world around them.",
+      "rating": 7.07,
+      "genres": "Horror, Science Fiction, Thriller"
     },
     {
       "id": 974576,
       "title": "Conclave",
       "image": "https://image.tmdb.org/t/p/w500/m5x8D0bZ3eKqIVWZ5y7TnZ2oTVg.jpg",
-      "description": "After the unexpected death of the Pope, Cardinal Lawrence is tasked with managing the covert and ancient ritual of electing a new one. Sequestered in the Vatican with the Catholic Church’s most powerful leaders until the process is complete, Lawrence finds himself at the center of a conspiracy that could lead to its downfall."
+      "description": "After the unexpected death of the Pope, Cardinal Lawrence is tasked with managing the covert and ancient ritual of electing a new one. Sequestered in the Vatican with the Catholic Church’s most powerful leaders until the process is complete, Lawrence finds himself at the center of a conspiracy that could lead to its downfall.",
+      "rating": 7.1,
+      "genres": "Drama, Thriller, Mystery"
     },
     {
-      "id": 822119,
-      "title": "Captain America: Brave New World",
-      "image": "https://image.tmdb.org/t/p/w500/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
-      "description": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red."
-    },
-    {
-      "id": 940139,
-      "title": "Here",
-      "image": "https://image.tmdb.org/t/p/w500/79euHUJJtfgeGU63ef38KtNjXEn.jpg",
-      "description": "An odyssey through time and memory, centered on a place in New England where—from wilderness, and then, later, from a home—love, loss, struggle, hope and legacy play out between couples and families over generations."
-    },
-    {
-      "id": 661539,
-      "title": "A Complete Unknown",
-      "image": "https://image.tmdb.org/t/p/w500/llWl3GtNoXosbvYboelmoT459NM.jpg",
-      "description": "New York, early 1960s. Against the backdrop of a vibrant music scene and tumultuous cultural upheaval, an enigmatic 19-year-old from Minnesota arrives in the West Village with his guitar and revolutionary talent, destined to change the course of American music."
-    },
-    {
-      "id": 1124620,
-      "title": "The Monkey",
-      "image": "https://image.tmdb.org/t/p/w500/yYa8Onk9ow7ukcnfp2QWVvjWYel.jpg",
-      "description": "When twin brothers find a mysterious wind-up monkey, a series of outrageous deaths tear their family apart. Twenty-five years later, the monkey begins a new killing spree forcing the estranged brothers to confront the cursed toy."
-    },
-    {
-      "id": 402431,
-      "title": "Wicked",
-      "image": "https://image.tmdb.org/t/p/w500/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
-      "description": "In the land of Oz, ostracized and misunderstood green-skinned Elphaba is forced to share a room with the popular aristocrat Glinda at Shiz University, and the two's unlikely friendship is tested as they begin to fulfill their respective destinies as Glinda the Good and the Wicked Witch of the West."
-    },
-    {
-      "id": 558449,
-      "title": "Gladiator II",
-      "image": "https://image.tmdb.org/t/p/w500/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
-      "description": "Years after witnessing the death of the revered hero Maximus at the hands of his uncle, Lucius is forced to enter the Colosseum after his home is conquered by the tyrannical Emperors who now lead Rome with an iron fist. With rage in his heart and the future of the Empire at stake, Lucius must look to his past to find strength and honor to return the glory of Rome to its people."
-    },
-    {
-      "id": 762509,
-      "title": "Mufasa: The Lion King",
-      "image": "https://image.tmdb.org/t/p/w500/lurEK87kukWNaHd0zYnsi3yzJrs.jpg",
-      "description": "Mufasa, a cub lost and alone, meets a sympathetic lion named Taka, the heir to a royal bloodline. The chance meeting sets in motion an expansive journey of a group of misfits searching for their destiny."
-    },
-    {
-      "id": 1356039,
-      "title": "Counterattack",
-      "image": "https://image.tmdb.org/t/p/w500/lI2uFlSEkwXKljqiry7coaJ6wIS.jpg",
-      "description": "When a hostage rescue mission creates a new enemy, Capt. Guerrero and his elite soldiers must face an ambush by a criminal group."
-    },
-    {
-      "id": 933260,
-      "title": "The Substance",
-      "image": "https://image.tmdb.org/t/p/w500/cGm2qnmXx9tFabmzEIkJZjCJdQd.jpg",
-      "description": "A fading celebrity decides to use a black market drug, a cell-replicating substance that temporarily creates a younger, better version of herself."
+      "id": 549509,
+      "title": "The Brutalist",
+      "image": "https://image.tmdb.org/t/p/w500/vP7Yd6couiAaw9jgMd5cjMRj3hQ.jpg",
+      "description": "Escaping post-war Europe, visionary architect László Toth arrives in America to rebuild his life. On his own in a strange new country, a wealthy industrialist recognizes his talent. But power and legacy come at a heavy cost...",
+      "rating": 7.1,
+      "genres": "Drama"
     },
     {
       "id": 939243,
       "title": "Sonic the Hedgehog 3",
       "image": "https://image.tmdb.org/t/p/w500/d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg",
-      "description": "Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet."
+      "description": "Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet.",
+      "rating": 7.74,
+      "genres": "Action, Science Fiction, Comedy, Family"
+    },
+    {
+      "id": 822119,
+      "title": "Captain America: Brave New World",
+      "image": "https://image.tmdb.org/t/p/w500/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+      "description": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
+      "rating": 6.2,
+      "genres": "Action, Thriller, Science Fiction"
+    },
+    {
+      "id": 661539,
+      "title": "A Complete Unknown",
+      "image": "https://image.tmdb.org/t/p/w500/llWl3GtNoXosbvYboelmoT459NM.jpg",
+      "description": "New York, early 1960s. Against the backdrop of a vibrant music scene and tumultuous cultural upheaval, an enigmatic 19-year-old from Minnesota arrives in the West Village with his guitar and revolutionary talent, destined to change the course of American music.",
+      "rating": 7.182,
+      "genres": "Drama, Music"
+    },
+    {
+      "id": 402431,
+      "title": "Wicked",
+      "image": "https://image.tmdb.org/t/p/w500/xDGbZ0JJ3mYaGKy4Nzd9Kph6M9L.jpg",
+      "description": "In the land of Oz, ostracized and misunderstood green-skinned Elphaba is forced to share a room with the popular aristocrat Glinda at Shiz University, and the two's unlikely friendship is tested as they begin to fulfill their respective destinies as Glinda the Good and the Wicked Witch of the West.",
+      "rating": 6.9,
+      "genres": "Drama, Romance, Fantasy"
+    },
+    {
+      "id": 933260,
+      "title": "The Substance",
+      "image": "https://image.tmdb.org/t/p/w500/cGm2qnmXx9tFabmzEIkJZjCJdQd.jpg",
+      "description": "A fading celebrity decides to use a black market drug, a cell-replicating substance that temporarily creates a younger, better version of herself.",
+      "rating": 7.1,
+      "genres": "Horror, Science Fiction"
+    },
+    {
+      "id": 558449,
+      "title": "Gladiator II",
+      "image": "https://image.tmdb.org/t/p/w500/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
+      "description": "Years after witnessing the death of the revered hero Maximus at the hands of his uncle, Lucius is forced to enter the Colosseum after his home is conquered by the tyrannical Emperors who now lead Rome with an iron fist. With rage in his heart and the future of the Empire at stake, Lucius must look to his past to find strength and honor to return the glory of Rome to its people.",
+      "rating": 6.8,
+      "genres": "Action, Adventure, Drama"
+    },
+    {
+      "id": 1124620,
+      "title": "The Monkey",
+      "image": "https://image.tmdb.org/t/p/w500/yYa8Onk9ow7ukcnfp2QWVvjWYel.jpg",
+      "description": "When twin brothers find a mysterious wind-up monkey, a series of outrageous deaths tear their family apart. Twenty-five years later, the monkey begins a new killing spree forcing the estranged brothers to confront the cursed toy.",
+      "rating": 6,
+      "genres": "Horror, Comedy"
     },
     {
       "id": 1212855,
       "title": "Fight or Flight",
       "image": "https://image.tmdb.org/t/p/w500/x4nWnfgJvL045rcUCSJzfgIIY9i.jpg",
-      "description": "A mercenary takes on the job of tracking down a target on a plane but must protect her when they're surrounded by people trying to kill both of them."
+      "description": "A mercenary takes on the job of tracking down a target on a plane but must protect her when they're surrounded by people trying to kill both of them.",
+      "rating": 7,
+      "genres": "Action, Thriller"
     },
     {
-      "id": 1000837,
-      "title": "I'm Still Here",
-      "image": "https://image.tmdb.org/t/p/w500/qNLMPY3KLrYgTX2QZ5iEwwOqyRz.jpg",
-      "description": "In 1971, military dictatorship in Brazil reaches its height. The Paiva family — Rubens, Eunice, and their five children — live in a beachside house in Rio, open to all their friends. One day, Rubens is taken for questioning and does not return."
+      "id": 762509,
+      "title": "Mufasa: The Lion King",
+      "image": "https://image.tmdb.org/t/p/w500/lurEK87kukWNaHd0zYnsi3yzJrs.jpg",
+      "description": "Mufasa, a cub lost and alone, meets a sympathetic lion named Taka, the heir to a royal bloodline. The chance meeting sets in motion an expansive journey of a group of misfits searching for their destiny.",
+      "rating": 7.5,
+      "genres": "Adventure, Family, Animation"
+    },
+    {
+      "id": 1405338,
+      "title": "Demon City",
+      "image": "https://image.tmdb.org/t/p/w500/fQ9hzto0cUuxjfzqNAiAnNJo8O7.jpg",
+      "description": "Framed for his family's murder and left for dead, an ex-hitman will stop at nothing to exact revenge on the masked \"demons\" who have taken over his city.",
+      "rating": 6.8,
+      "genres": "Action, Crime, Fantasy, Thriller"
+    },
+    {
+      "id": 1241982,
+      "title": "Moana 2",
+      "image": "https://image.tmdb.org/t/p/w500/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg",
+      "description": "After receiving an unexpected call from her wayfinding ancestors, Moana journeys alongside Maui and a new crew to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she's ever faced.",
+      "rating": 7.2,
+      "genres": "Animation, Adventure, Family, Comedy"
+    },
+    {
+      "id": 1356039,
+      "title": "Counterattack",
+      "image": "https://image.tmdb.org/t/p/w500/lI2uFlSEkwXKljqiry7coaJ6wIS.jpg",
+      "description": "When a hostage rescue mission creates a new enemy, Capt. Guerrero and his elite soldiers must face an ambush by a criminal group.",
+      "rating": 8.639,
+      "genres": "Action, Adventure, Thriller"
     }
   ],
   "tvShows": [
@@ -126,121 +166,161 @@
       "id": 202555,
       "title": "Daredevil: Born Again",
       "image": "https://image.tmdb.org/t/p/w500/9lLuhV703HGCbnz6FxnqCwIwzAZ.jpg",
-      "description": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course."
+      "description": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
+      "rating": 8.7,
+      "genres": "Drama, Crime"
     },
     {
       "id": 284792,
       "title": "Medusa",
       "image": "https://image.tmdb.org/t/p/w500/mFsjwJdNBKDRYLqPdBFaoVCKXLq.jpg",
-      "description": "Somebody wants to kill CEO Bárbara Hidalgo. Can she find the culprit as her family schemes ruthlessly for control of their Colombian business empire?"
+      "description": "Somebody wants to kill CEO Bárbara Hidalgo. Can she find the culprit as her family schemes ruthlessly for control of their Colombian business empire?",
+      "rating": 7,
+      "genres": "Drama"
     },
     {
       "id": 225399,
       "title": "The Leopard",
       "image": "https://image.tmdb.org/t/p/w500/7mbS9n5d98ULdTZREUf8TlgNNoD.jpg",
-      "description": "Amid the unification of 1860s Italy, a Sicilian prince grapples with the collision between his family's ancient privilege and revolutionary change."
+      "description": "Amid the unification of 1860s Italy, a Sicilian prince grapples with the collision between his family's ancient privilege and revolutionary change.",
+      "rating": 9.4,
+      "genres": "Drama"
     },
     {
       "id": 283484,
       "title": "Just One Look",
       "image": "https://image.tmdb.org/t/p/w500/tkgOwXrCgrEc53K1lVljL5MevDA.jpg",
-      "description": "When an ominous photo mysteriously surfaces, Greta must confront buried truths — and her hazy memory — to save her husband from his dark secrets."
+      "description": "When an ominous photo mysteriously surfaces, Greta must confront buried truths — and her hazy memory — to save her husband from his dark secrets.",
+      "rating": 10,
+      "genres": "Mystery, Crime, Drama"
     },
     {
       "id": 245927,
       "title": "Paradise",
       "image": "https://image.tmdb.org/t/p/w500/sJUti0JDtE1IYl7RVJARAGyKHqz.jpg",
-      "description": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds."
+      "description": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+      "rating": 7.7,
+      "genres": "Drama, Crime"
     },
     {
       "id": 246381,
       "title": "Prime Target",
       "image": "https://image.tmdb.org/t/p/w500/bGYCimDXRL7cE3uETLZzMCFOdJo.jpg",
-      "description": "A brilliant math student is on the verge of a major breakthrough when a shadowy enemy tries to stop him. Fighting for answers—and his life—he teams up with a government agent to unravel a high-stakes conspiracy."
+      "description": "A brilliant math student is on the verge of a major breakthrough when a shadowy enemy tries to stop him. Fighting for answers—and his life—he teams up with a government agent to unravel a high-stakes conspiracy.",
+      "rating": 7.019,
+      "genres": "Drama, Crime"
     },
     {
       "id": 95396,
       "title": "Severance",
       "image": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
-      "description": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs."
-    },
-    {
-      "id": 65942,
-      "title": "Re:ZERO -Starting Life in Another World-",
-      "image": "https://image.tmdb.org/t/p/w500/aRwmcX36r1ZpR5Xq5mmFcpUDQ8J.jpg",
-      "description": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for."
-    },
-    {
-      "id": 127532,
-      "title": "Solo Leveling",
-      "image": "https://image.tmdb.org/t/p/w500/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg",
-      "description": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them."
+      "description": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+      "rating": 8.4,
+      "genres": "Drama, Mystery, Sci-Fi & Fantasy"
     },
     {
       "id": 37854,
       "title": "One Piece",
       "image": "https://image.tmdb.org/t/p/w500/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg",
-      "description": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!"
+      "description": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "rating": 8.7,
+      "genres": "Action & Adventure, Comedy, Animation"
     },
     {
-      "id": 108978,
-      "title": "Reacher",
-      "image": "https://image.tmdb.org/t/p/w500/31GlRQMiDunO8cl3NxTz34U64rf.jpg",
-      "description": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served."
+      "id": 127532,
+      "title": "Solo Leveling",
+      "image": "https://image.tmdb.org/t/p/w500/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg",
+      "description": "They say whatever doesn’t kill you makes you stronger, but that’s not the case for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by monsters in a high-ranking dungeon, Jinwoo came back with the System, a program only he could see, that’s leveling him up in every way. Now, he’s inspired to discover the secrets behind his powers and the dungeon that spawned them.",
+      "rating": 8.538,
+      "genres": "Action & Adventure, Sci-Fi & Fantasy, Animation"
     },
     {
-      "id": 111803,
-      "title": "The White Lotus",
-      "image": "https://image.tmdb.org/t/p/w500/aVhCMD65Q9YNsVDfJaoFQLQ5wrR.jpg",
-      "description": "Follow the exploits of various guests and employees at an exclusive tropical resort over the span of a week as with each passing day, a darker complexity emerges in these picture-perfect travelers, the hotel’s cheerful employees and the idyllic locale itself."
-    },
-    {
-      "id": 157744,
-      "title": "1923",
-      "image": "https://image.tmdb.org/t/p/w500/97YimtKZCD0bvHIG4YPgWo3OYar.jpg",
-      "description": "Follow a new generation of the Dutton family during the early twentieth century when pandemics, historic drought, the end of Prohibition and the Great Depression all plague the mountain west, and the Duttons who call it home."
-    },
-    {
-      "id": 216082,
-      "title": "Zero Day",
-      "image": "https://image.tmdb.org/t/p/w500/odIyR46aAX59dvQ1ON4P53ow1aE.jpg",
-      "description": "A former U.S. President is called out of retirement to find the source of a deadly cyberattack, only to discover a vast web of lies and conspiracies."
-    },
-    {
-      "id": 243881,
-      "title": "House of David",
-      "image": "https://image.tmdb.org/t/p/w500/64ooH4xSiMGAFG11emiGv3pdVkH.jpg",
-      "description": "Tells the story of the ascent of the biblical figure, David, who becomes the most celebrated king of Israel. The series follows the once-mighty King Saul as he falls victim to his own pride. At the direction of God, the prophet Samuel anoints an unlikely, outcast teenager as the new king."
-    },
-    {
-      "id": 61889,
-      "title": "Marvel's Daredevil",
-      "image": "https://image.tmdb.org/t/p/w500/QWbPaDxiB6LW2LjASknzYBvjMj.jpg",
-      "description": "Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil."
-    },
-    {
-      "id": 95557,
-      "title": "INVINCIBLE",
-      "image": "https://image.tmdb.org/t/p/w500/jBn4LWlgdsf6xIUYhYBwpctBVsj.jpg",
-      "description": "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage."
-    },
-    {
-      "id": 280976,
-      "title": "With Love, Meghan",
-      "image": "https://image.tmdb.org/t/p/w500/gE6phsPPgV8hvEi2rq5Zoz6va9H.jpg",
-      "description": "Meghan, Duchess of Sussex invites friends and famous guests to a beautiful California estate, where she shares cooking, gardening and hosting tips."
+      "id": 65942,
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "image": "https://image.tmdb.org/t/p/w500/aRwmcX36r1ZpR5Xq5mmFcpUDQ8J.jpg",
+      "description": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+      "rating": 7.8,
+      "genres": "Animation, Comedy, Action & Adventure, Sci-Fi & Fantasy"
     },
     {
       "id": 259288,
       "title": "Friendly Rivalry",
       "image": "https://image.tmdb.org/t/p/w500/eRwNhjpizV7up8KrCmiI94is1bl.jpg",
-      "description": "A high-teen mystery thriller about a close relationship between teenage girls in a harsher survival competition than entrance examinations."
+      "description": "A high-teen mystery thriller about a close relationship between teenage girls in a harsher survival competition than entrance examinations.",
+      "rating": 8.6,
+      "genres": "Mystery, Drama"
+    },
+    {
+      "id": 108978,
+      "title": "Reacher",
+      "image": "https://image.tmdb.org/t/p/w500/31GlRQMiDunO8cl3NxTz34U64rf.jpg",
+      "description": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "rating": 8.1,
+      "genres": "Action & Adventure, Crime, Drama"
+    },
+    {
+      "id": 111803,
+      "title": "The White Lotus",
+      "image": "https://image.tmdb.org/t/p/w500/aVhCMD65Q9YNsVDfJaoFQLQ5wrR.jpg",
+      "description": "Follow the exploits of various guests and employees at an exclusive tropical resort over the span of a week as with each passing day, a darker complexity emerges in these picture-perfect travelers, the hotel’s cheerful employees and the idyllic locale itself.",
+      "rating": 7.6,
+      "genres": "Comedy, Drama, Mystery"
+    },
+    {
+      "id": 157744,
+      "title": "1923",
+      "image": "https://image.tmdb.org/t/p/w500/97YimtKZCD0bvHIG4YPgWo3OYar.jpg",
+      "description": "Follow a new generation of the Dutton family during the early twentieth century when pandemics, historic drought, the end of Prohibition and the Great Depression all plague the mountain west, and the Duttons who call it home.",
+      "rating": 8.1,
+      "genres": "Drama, Western"
+    },
+    {
+      "id": 243881,
+      "title": "House of David",
+      "image": "https://image.tmdb.org/t/p/w500/64ooH4xSiMGAFG11emiGv3pdVkH.jpg",
+      "description": "Tells the story of the ascent of the biblical figure, David, who becomes the most celebrated king of Israel. The series follows the once-mighty King Saul as he falls victim to his own pride. At the direction of God, the prophet Samuel anoints an unlikely, outcast teenager as the new king.",
+      "rating": 7.9,
+      "genres": "Drama"
+    },
+    {
+      "id": 61889,
+      "title": "Marvel's Daredevil",
+      "image": "https://image.tmdb.org/t/p/w500/QWbPaDxiB6LW2LjASknzYBvjMj.jpg",
+      "description": "Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.",
+      "rating": 8.2,
+      "genres": "Crime, Drama, Action & Adventure"
+    },
+    {
+      "id": 95557,
+      "title": "INVINCIBLE",
+      "image": "https://image.tmdb.org/t/p/w500/jBn4LWlgdsf6xIUYhYBwpctBVsj.jpg",
+      "description": "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage.",
+      "rating": 8.6,
+      "genres": "Animation, Sci-Fi & Fantasy, Action & Adventure, Drama"
+    },
+    {
+      "id": 62745,
+      "title": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+      "image": "https://image.tmdb.org/t/p/w500/h97iHupymkJXBv0gyr4qlePhKAk.jpg",
+      "description": "In Orario, fearless adventurers band together in search of fame and fortune within the underground labyrinth known as the Dungeon. But Bell Cranel, novice adventurer, has bigger plans than riches and glory; he fights monsters in the hope of having a fateful encounter with a girl. When this happens, it doesn't go exactly as he planned. Thus begins the story of an unlikely pair, a boy and a goddess, both trying to prove themselves, both eager to reach their goals.",
+      "rating": 7.3,
+      "genres": "Animation, Comedy, Sci-Fi & Fantasy, Action & Adventure"
     },
     {
       "id": 250060,
       "title": "The First Frost",
       "image": "https://image.tmdb.org/t/p/w500/iqFr4kgIdJU73YoJr4Vdf7gFZqr.jpg",
-      "description": "Wen Yifan, by chance, ends up living with her high school classmate Sang Yan, whom she once rejected. They keep their distance until Wen Yifan learns from Sang Yan that she sleepwalks, intertwining their lives once more."
+      "description": "Wen Yifan, by chance, ends up living with her high school classmate Sang Yan, whom she once rejected. They keep their distance until Wen Yifan learns from Sang Yan that she sleepwalks, intertwining their lives once more.",
+      "rating": 8.5,
+      "genres": "Drama"
+    },
+    {
+      "id": 280976,
+      "title": "With Love, Meghan",
+      "image": "https://image.tmdb.org/t/p/w500/gE6phsPPgV8hvEi2rq5Zoz6va9H.jpg",
+      "description": "Meghan, Duchess of Sussex invites friends and famous guests to a beautiful California estate, where she shares cooking, gardening and hosting tips.",
+      "rating": 1,
+      "genres": "Reality"
     }
   ]
 }

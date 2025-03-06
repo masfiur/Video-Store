@@ -35,7 +35,6 @@ const MovieDetails = () => {
     <div className="movie-details">
       <h1 className="movie-title">{movie.title}</h1>
       <div className="posters">
-        <img src={movie.smallPoster} alt="Small Poster" className="small-poster" />
         <img src={movie.largePoster} alt="Large Poster" className="large-poster" />
       </div>
       <p className="synopsis">{movie.synopsis}</p>

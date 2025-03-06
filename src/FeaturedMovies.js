@@ -1,33 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import FeaturedMedia from "./FeaturedMedia"; // Import reusable component
 
-const movies = [
-  {
-    id: 1,
-    title: "Spider-Man: No Way Home",
-    image: "https://example.com/spiderman-poster.jpg",
-    description: "Peter Parker faces the multiverse and new challenges.",
-  },
-  {
-    id: 2,
-    title: "Dune",
-    image: "https://example.com/dune-poster.jpg",
-    description: "A young man embarks on an epic journey on the desert planet Arrakis.",
-  },
-  {
-    id: 3,
-    title: "The Matrix Resurrections",
-    image: "https://example.com/matrix-poster.jpg",
-    description: "Neo returns to the Matrix for a new mission.",
-  },
-  {
-    id: 4,
-    title: "Loki",
-    image: "https://example.com/loki-poster.jpg",
-    description: "The God of Mischief explores alternate realities and time travel.",
-  },
-];
+const FeaturedMovies = () => {
+  const [featuredMovies, setFeaturedMovies] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-const FeaturedMovies = () => <FeaturedMedia title="Featured Movies" mediaList={movies} />;
+  useEffect(() => {
+    const fetchFeaturedMovies = async () => {
+      try {
+        // Fetch movies from your API
+        const response = await fetch("https://video-store-api.vercel.app/movies");
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        // Select 4-6 movies to feature (you can customize this selection logic)
+        // This example selects 6 random popular movies
+        const randomMovies = data
+          .sort(() => 0.5 - Math.random()) // Shuffle the array
+          .slice(0, 6);  // Take the first 6 items
+        
+        setFeaturedMovies(randomMovies);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+        console.error("Error fetching featured movies:", err);
+      }
+    };
+
+    fetchFeaturedMovies();
+  }, []);
+
+  if (loading) return <div className="loading">Loading featured movies...</div>;
+  if (error) return <div className="error">Error loading movies: {error}</div>;
+
+  return <FeaturedMedia title="Featured Movies" mediaList={featuredMovies} />;
+};
 
 export default FeaturedMovies;

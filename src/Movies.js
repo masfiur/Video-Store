@@ -5,10 +5,9 @@ const Movies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    // Updated to fetch data from your Vercel-deployed JSON server API
-    fetch("https://json-server-api-rho.vercel.app/movies")
+    fetch("https://video-store-api.vercel.app/movies") // Fetching from Vercel API
       .then((response) => response.json())
-      .then((data) => setMovies(data)) // Set the movies data
+      .then((data) => setMovies(data))
       .catch((error) => console.error("Error fetching movies:", error));
   }, []);
 
