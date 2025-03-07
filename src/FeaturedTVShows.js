@@ -19,7 +19,7 @@ const FeaturedTVShows = () => {
         // Select 4-6 TV shows to feature
         const randomTVShows = data
           .sort(() => 0.5 - Math.random()) // Shuffle the array
-          .slice(0, 6);  // Take the first 6 items
+          .slice(0, 4);  // Take the first 6 items
         
         setFeaturedTVShows(randomTVShows);
         setLoading(false);

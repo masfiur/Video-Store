@@ -22,7 +22,7 @@ const FeaturedMovies = () => {
         // This example selects 6 random popular movies
         const randomMovies = data
           .sort(() => 0.5 - Math.random()) // Shuffle the array
-          .slice(0, 6);  // Take the first 6 items
+          .slice(0, 4);  // Take the first 6 items
         
         setFeaturedMovies(randomMovies);
         setLoading(false);

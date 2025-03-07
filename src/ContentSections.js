@@ -1,56 +1,81 @@
 import React from "react";
-import "./ContentSections.css";
 
 const ContentSections = () => {
   return (
-    <div className="content-sections">
-      
+    <>
+      {/* Bootstrap CSS */}
+      <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+      />
 
-      {/* Our Services Section */}
-      <section className="content-section our-services">
-        <h2>Our Services</h2>
-        <div className="services-list">
-          <div className="service-item">
-            <h3>Stream Online</h3>
-            <p>
-              Enjoy streaming your favorite movies and TV shows from any device
-              with our easy-to-use platform.
-            </p>
+      <div className="container mt-4 mb-5">
+        {/* Our Services Section */}
+        <section className="mb-5">
+          <h2 className="mb-4">Our Services</h2>
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="col">
+              <div className="card h-100 shadow-sm">
+                <div className="card-body">
+                  <h3 className="card-title">Stream Online</h3>
+                  <p className="card-text">
+                    Enjoy streaming your favorite movies and TV shows from any device
+                    with our easy-to-use platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card h-100 shadow-sm">
+                <div className="card-body">
+                  <h3 className="card-title">Buy and Own</h3>
+                  <p className="card-text">
+                    Purchase movies and TV shows to add to your personal collection
+                    and watch offline anytime.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card h-100 shadow-sm">
+                <div className="card-body">
+                  <h3 className="card-title">Exclusive Offers</h3>
+                  <p className="card-text">
+                    Get exclusive access to limited-time offers, discounts, and
+                    bundles on the latest titles.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="service-item">
-            <h3>Buy and Own</h3>
-            <p>
-              Purchase movies and TV shows to add to your personal collection
-              and watch offline anytime.
-            </p>
-          </div>
-          <div className="service-item">
-            <h3>Exclusive Offers</h3>
-            <p>
-              Get exclusive access to limited-time offers, discounts, and
-              bundles on the latest titles.
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Why Choose Us Section */}
-      <section className="content-section why-choose-us">
-        <h2>Why Choose Us</h2>
-        <p>
-          We believe in providing a seamless and enjoyable experience for all
-          of our users. Here are a few reasons why you should choose us for your
-          movie and TV show needs:
-        </p>
-        <ul>
-          <li>High-quality content at affordable prices</li>
-          <li>Wide range of movies and TV shows, both new and old</li>
-          <li>Easy-to-navigate platform for a hassle-free experience</li>
-          <li>Customer support available 24/7</li>
-        </ul>
-       
-      </section>
-    </div>
+        {/* Why Choose Us Section */}
+        <section className="mb-5">
+          <div className="card shadow-sm">
+            <div className="card-body">
+              <h2 className="card-title mb-3">Why Choose Us</h2>
+              <p className="card-text">
+                We believe in providing a seamless and enjoyable experience for all
+                of our users. Here are a few reasons why you should choose us for your
+                movie and TV show needs:
+              </p>
+              <ul className="list-group list-group-flush mt-3">
+                <li className="list-group-item">High-quality content at affordable prices</li>
+                <li className="list-group-item">Wide range of movies and TV shows, both new and old</li>
+                <li className="list-group-item">Easy-to-navigate platform for a hassle-free experience</li>
+                <li className="list-group-item">Customer support available 24/7</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Bootstrap JS */}
+      <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      ></script>
+    </>
   );
 };
 

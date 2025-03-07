@@ -1,5 +1,5 @@
+// eslint-disable-next-line
 import React, { useState } from "react";
-import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -17,33 +17,73 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <h2>Log In</h2>
-      <form onSubmit={handleSubmit} className="login-form">
-        <div className="input-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
-          />
+    <>
+      {/* Bootstrap CSS */}
+      <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+      />
+
+      <div className="container d-flex justify-content-center align-items-center vh-100">
+        <div className="card shadow-sm" style={{width: '400px'}}>
+          <div className="card-body p-4">
+            <h2 className="card-title text-center mb-4">Log In</h2>
+            <form onSubmit={handleSubmit}>
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">Email address</label>
+                <input 
+                  type="email" 
+                  className="form-control" 
+                  id="email" 
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="password" className="form-label">Password</label>
+                <input 
+                  type="password" 
+                  className="form-control" 
+                  id="password" 
+                  placeholder="Enter your password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </div>
+              
+              {error && (
+                <div className="alert alert-danger" role="alert">
+                  {error}
+                </div>
+              )}
+
+              <div className="d-grid">
+                <button 
+                  type="submit" 
+                  className="btn btn-primary"
+                >
+                  Log In
+                </button>
+              </div>
+            </form>
+
+            <div className="text-center mt-3">
+              <small className="text-muted">
+                Don't have an account? <a href="#" className="text-primary">Sign Up</a>
+              </small>
+            </div>
+          </div>
         </div>
-        <div className="input-group">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter your password"
-          />
-        </div>
-        {error && <p className="error-message">{error}</p>}
-        <button type="submit" className="login-btn">Log In</button>
-      </form>
-    </div>
+      </div>
+
+      {/* Bootstrap JS (optional, but recommended for certain components) */}
+      <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      ></script>
+    </>
   );
 };
 

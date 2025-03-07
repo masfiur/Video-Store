@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./Hero.css";
 
-const Hero = () => {
+const HeroSection = () => {
   const [slides, setSlides] = useState([]);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [avgMovieRating, setAvgMovieRating] = useState(0);
-  const [avgTvRating, setAvgTvRating] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,55 +24,46 @@ const Hero = () => {
           .sort((a, b) => b.rating - a.rating)
           .slice(0, 2);
         
-        // Calculate average ratings
-        const movieRatingSum = topMovies.reduce((sum, movie) => sum + movie.rating, 0);
-        const tvRatingSum = topTvShows.reduce((sum, show) => sum + show.rating, 0);
-        
-        setAvgMovieRating((movieRatingSum / topMovies.length).toFixed(1));
-        setAvgTvRating((tvRatingSum / topTvShows.length).toFixed(1));
-        
-        // Combine and format slides using the correct image property
+        // Combine slides
         const combinedSlides = [
           ...topMovies.map(movie => ({
             id: movie.id,
             title: movie.title,
-            image: movie.image, // Use image instead of posterUrl
+            image: movie.image,
             alt: movie.title,
-            type: "Movie",
-            rating: movie.rating
+            type: "Movie"
           })),
           ...topTvShows.map(show => ({
             id: `tv-${show.id}`,
-            title: show.title, // Use title property for TV shows as well
-            image: show.image, // Use image instead of posterUrl
+            title: show.title,
+            image: show.image,
             alt: show.title,
-            type: "TV Show",
-            rating: show.rating
+            type: "TV Show"
           }))
         ];
         
         setSlides(combinedSlides);
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
-        // Fallback to default slides if API fails
+        // Fallback slides
         setSlides([
           {
             id: 1,
             title: "Spider-Man: No Way Home",
             image: "https://wallpapers.com/images/featured/spider-man-no-way-home-pictures-l3ztimmzaeeqfgir.jpg",
             alt: "Spider-Man: No Way Home",
-            type: "Movie",
-            rating: 8.5
+            type: "Movie"
           },
           {
             id: 2,
             title: "Dune",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYzJ7C5OCf9kVTPeeOxhIzpdCUTH1hGZdoKQ&s",
             alt: "Dune",
-            type: "Movie",
-            rating: 8.3
-          },
+            type: "Movie"
+          }
         ]);
+        setLoading(false);
       }
     };
 
@@ -85,47 +74,80 @@ const Hero = () => {
     if (slides.length === 0) return;
     
     const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+      setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000); // Change slide every 5 seconds
     
     return () => clearInterval(interval); // Cleanup on component unmount
   }, [slides]);
 
-  if (slides.length === 0) {
-    return <div className="hero loading">Loading...</div>;
+  if (loading) {
+    return (
+      <div className="container mt-4 mb-5">
+        <div className="bg-light p-5 rounded text-center">
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <p className="mt-3">Loading featured content...</p>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <section className="hero">
-      <div className="hero-content">
-        <h1>{slides[currentSlide].title}</h1>
-        <div className="hero-details">
-          <span className="hero-type">{slides[currentSlide].type}</span>
-          <span className="hero-rating">Rating: {slides[currentSlide].rating}/10</span>
+    <>
+      {/* Bootstrap CSS */}
+      <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+      />
+
+      <div className="container mt-4 mb-5">
+        <div id="heroCarousel" className="carousel slide shadow" data-bs-ride="carousel">
+          <div className="carousel-indicators">
+            {slides.map((_, index) => (
+              <button 
+                key={index} 
+                type="button" 
+                data-bs-target="#heroCarousel" 
+                data-bs-slide-to={index} 
+                className={index === activeIndex ? "active" : ""}
+                aria-current={index === activeIndex ? "true" : "false"}
+                aria-label={`Slide ${index + 1}`}
+                onClick={() => setActiveIndex(index)}
+              ></button>
+            ))}
+          </div>
+          
+          <div className="carousel-inner rounded">
+            {slides.map((slide, index) => (
+              <div key={slide.id} className={`carousel-item ${index === activeIndex ? "active" : ""}`}>
+                <div className="position-relative" style={{ height: "400px", overflow: "hidden" }}>
+                  <img 
+                    src={slide.image} 
+                    alt={slide.alt} 
+                    className="w-100 h-100" 
+                    style={{ objectFit: "contain", objectPosition: "center" }} 
+                  />
+                  <div className="position-absolute bottom-0 w-100 text-white p-4" style={{ background: "rgba(0,0,0,0.7)" }}>
+                    <h3>{slide.title}</h3>
+
+
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+         
         </div>
-        <div className="hero-averages">
-          <div className="avg-movie">Top Movies Avg: {avgMovieRating}/10</div>
-          <div className="avg-tv">Top TV Shows Avg: {avgTvRating}/10</div>
-        </div>
       </div>
-      <div className="hero-slide">
-        <img
-          src={slides[currentSlide].image}
-          alt={slides[currentSlide].alt}
-          className="hero-image"
-        />
-      </div>
-      <div className="hero-controls">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`hero-dot ${currentSlide === index ? 'active' : ''}`}
-            onClick={() => setCurrentSlide(index)}
-          />
-        ))}
-      </div>
-    </section>
+
+      {/* Bootstrap JS */}
+      <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      ></script>
+    </>
   );
 };
 
-export default Hero;
+export default HeroSection;

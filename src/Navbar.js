@@ -1,26 +1,61 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar">
-      <div className="logo">🎬 MovieShop</div>
-      
-      <ul className={menuOpen ? "nav-links open" : "nav-links"}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/movies">Movies</Link></li>
-        <li><Link to="/tv-shows">TV Shows</Link></li>
-        <li><Link to="/login">Log In</Link></li>
-        <li><Link to="/register">Register</Link></li>
-      </ul>
+    <>
+      {/* Bootstrap CSS */}
+      <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+      />
 
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
-      </div>
-    </nav>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <Link className="navbar-brand fw-bold" to="/">🎬 MovieShop</Link>
+          
+          <button 
+            className="navbar-toggler" 
+            type="button" 
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-controls="navbarNav" 
+            aria-expanded={menuOpen ? "true" : "false"} 
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          
+          <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`} id="navbarNav">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link" to="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/movies">Movies</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/tv-shows">TV Shows</Link>
+              </li>
+            </ul>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" to="/login">Log In</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link btn btn-outline-primary ms-2" to="/register">Register</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      {/* Bootstrap JS */}
+      <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      ></script>
+    </>
   );
 };
 
