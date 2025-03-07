@@ -22,11 +22,7 @@ const FeaturedMedia = ({ title, mediaList }) => {
 
   return (
     <>
-      {/* Bootstrap CSS */}
-      <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-      />
+      
       
       <div className="container mt-4 mb-5">
         <h2 className="mb-4">{title}</h2>
@@ -34,7 +30,7 @@ const FeaturedMedia = ({ title, mediaList }) => {
           {mediaList.map((item) => (
             <div key={item.id} className="col">
               <div className="card h-100 shadow-sm">
-                <div style={{ height: "200px", overflow: "hidden" }}>
+                <div style={{ height: "380px", overflow: "hidden" }}>
                   <img 
                     src={item.image} 
                     alt={item.title} 
@@ -52,10 +48,7 @@ const FeaturedMedia = ({ title, mediaList }) => {
         </div>
       </div>
 
-      {/* Bootstrap JS */}
-      <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      ></script>
+      
     </>
   );
 };

@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
 import Login from "./Login";
 import Register from "./Register";
-import Hero from "./pages/home/Hero";
-import FeaturedMovies from "./pages/home/featuredsection/FeaturedMovies";
-import FeaturedTVShows from "./pages//home/featuredsection/FeaturedTVShows";
-import ContentSections from "./pages/home/ContentSections";
+import Hero from "./home/Hero";
+import FeaturedMovies from "./home/featuredsection/FeaturedMovies";
+import FeaturedTVShows from "./home/featuredsection/FeaturedTVShows";
+import ContentSections from "./home/ContentSections";
 import Footer from "./Footer";
-import Movies from "./pages/movie/Movies";
-import TVShows from "./pages/tvshow/TVShows";
-import MovieDetails from "./pages/movie/MovieDetails";
-import TVShowDetails from "./pages/tvshow/TVShowDetails";
-import { MoviesProvider, TVShowsProvider } from "./api/ContextFile"; 
+import Movies from "./movie/Movies";
+import TVShows from "./tvshow/TVShows";
+import MovieDetails from "./movie/MovieDetails";
+import TVShowDetails from "./tvshow/TVShowDetails";
+import { MoviesProvider, TVShowsProvider } from "../api/ContextFile"; 
 
 const Home = () => (
   <div>

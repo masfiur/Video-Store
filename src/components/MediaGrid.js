@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 const MediaGrid = ({ title, mediaList, mediaType }) => {
   return (
     <>
-      {/* Bootstrap CSS */}
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-      />
+      
 
       <div className="container mt-4 mb-5">
         <h1 className="mb-4">{title}</h1>
@@ -19,8 +15,8 @@ const MediaGrid = ({ title, mediaList, mediaType }) => {
                 to={`/${mediaType}/${item.id}`} 
                 className="text-decoration-none"
               >
-                <div className="card h-100 shadow">
-                  <div style={{ height: "480px", overflow: "hidden" }}>
+                <div className="card h-100 shadow" style={{ borderRadius: "15px" }}>
+                  <div style={{ height: "480px", borderRadius: "15px", overflow: "hidden" }}>
                     <img 
                       src={item.image} 
                       alt={item.title} 
@@ -39,10 +35,6 @@ const MediaGrid = ({ title, mediaList, mediaType }) => {
         </div>
       </div>
 
-      {/* Bootstrap JS */}
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      ></script>
     </>
   );
 };

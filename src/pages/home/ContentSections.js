@@ -3,11 +3,7 @@ import React from "react";
 const ContentSections = () => {
   return (
     <>
-      {/* Bootstrap CSS */}
-      <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-      />
+      
 
       <div className="container mt-4 mb-5">
         {/* Our Services Section */}
@@ -71,10 +67,7 @@ const ContentSections = () => {
         </section>
       </div>
 
-      {/* Bootstrap JS */}
-      <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      ></script>
+      
     </>
   );
 };
