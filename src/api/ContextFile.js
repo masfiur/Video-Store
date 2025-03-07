@@ -1,18 +1,14 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
 
-// Create a Context for Movies
 const MoviesContext = createContext();
-// Create a Context for TV Shows
 const TVShowsContext = createContext();
 
-// MoviesProvider
 export const MoviesProvider = ({ children }) => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch movies using Promise chaining
     fetch("https://video-store-api.vercel.app/movies")
       .then((response) => {
         if (!response.ok) {
@@ -38,14 +34,12 @@ export const MoviesProvider = ({ children }) => {
   );
 };
 
-// TVShowsProvider
 export const TVShowsProvider = ({ children }) => {
   const [tvShows, setTvShows] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch TV shows using Promise chaining
     fetch("https://video-store-api.vercel.app/tvShows")
       .then((response) => {
         if (!response.ok) {
@@ -71,6 +65,5 @@ export const TVShowsProvider = ({ children }) => {
   );
 };
 
-// Custom Hooks to use the contexts
 export const useMovies = () => useContext(MoviesContext);
 export const useTVShows = () => useContext(TVShowsContext);

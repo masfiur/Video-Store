@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      {/* Bootstrap CSS */}
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
       />
-      {/* Font Awesome for social icons */}
+
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -17,7 +16,6 @@ const Footer = () => {
       
       <footer className="bg-dark text-white py-5 mt-5">
         <div className="container">
-          {/* Footer Menu Section */}
           <div className="row mb-4">
             <div className="col-md-12 text-center">
               <ul className="list-inline mb-0">
@@ -71,10 +69,8 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Divider */}
           <hr className="my-4" />
           
-          {/* Additional Information Section */}
           <div className="row">
             <div className="col-md-12 text-center">
               <p className="mb-1">&copy; 2025 Movie & TV Digital Shop. All Rights Reserved.</p>
@@ -86,7 +82,6 @@ const Footer = () => {
         </div>
       </footer>
       
-      {/* Add custom styles */}
       <style>
         {`
           footer a:hover {
@@ -99,7 +94,6 @@ const Footer = () => {
         `}
       </style>
       
-      {/* Bootstrap JS */}
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       ></script>

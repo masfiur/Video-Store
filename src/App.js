@@ -5,7 +5,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Hero from "./pages/home/Hero";
 import FeaturedMovies from "./pages/home/featuredsection/FeaturedMovies";
-import FeaturedTVShows from "./pages//home/featuredsection/FeaturedTVShows";
+import FeaturedTVShows from "./pages/home/featuredsection/FeaturedTVShows";
 import ContentSections from "./pages/home/ContentSections";
 import Footer from "./Footer";
 import Movies from "./pages/movie/Movies";

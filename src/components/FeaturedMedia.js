@@ -3,7 +3,7 @@ import React from "react";
 const FeaturedMedia = ({ title, mediaList }) => {
   const renderStars = (rating) => {
     const maxStars = 5;
-    const filledStars = Math.round((rating / 10) * maxStars); // Assuming ratings are out of 10
+    const filledStars = Math.round((rating / 10) * maxStars); 
     
     return (
       <div className="d-flex align-items-center">

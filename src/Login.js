@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React, { useState } from "react";
 
 const Login = () => {
@@ -18,11 +17,6 @@ const Login = () => {
 
   return (
     <>
-      {/* Bootstrap CSS */}
-      <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-      />
 
       <div className="container d-flex justify-content-center align-items-center vh-100">
         <div className="card shadow-sm" style={{width: '400px'}}>
@@ -79,10 +73,6 @@ const Login = () => {
         </div>
       </div>
 
-      {/* Bootstrap JS (optional, but recommended for certain components) */}
-      <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      ></script>
     </>
   );
 };

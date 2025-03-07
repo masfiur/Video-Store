@@ -6,7 +6,6 @@ const ContentSections = () => {
       
 
       <div className="container mt-4 mb-5">
-        {/* Our Services Section */}
         <section className="mb-5">
           <h2 className="mb-4">Our Services</h2>
           <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -46,7 +45,6 @@ const ContentSections = () => {
           </div>
         </section>
 
-        {/* Why Choose Us Section */}
         <section className="mb-5">
           <div className="card shadow-sm">
             <div className="card-body">

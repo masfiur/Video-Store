@@ -11,11 +11,9 @@ const HeroSection = () => {
   useEffect(() => {
     if (!movies.length && !tvShows.length) return;
 
-    // Sort movies and TV shows by rating (descending) and get top 2 from each
     const topMovies = [...movies].sort((a, b) => b.rating - a.rating).slice(0, 2);
     const topTvShows = [...tvShows].sort((a, b) => b.rating - a.rating).slice(0, 2);
 
-    // Combine and set slides
     const combinedSlides = [
       ...topMovies.map((movie) => ({
         id: movie.id,
@@ -41,7 +39,7 @@ const HeroSection = () => {
 
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, [slides]);
