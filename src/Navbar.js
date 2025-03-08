@@ -7,11 +7,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Bootstrap CSS */}
-      <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-      />
+      
 
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
@@ -19,7 +15,7 @@ const Navbar = () => {
           <img 
               src={img}
               alt="MT Shop Logo" 
-              style={{ height: "40px" }} // You can adjust the height of the logo here
+              style={{ height: "40px" }} 
             />
           </Link>
           

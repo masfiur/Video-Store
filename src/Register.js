@@ -20,11 +20,7 @@ const Register = () => {
 
   return (
     <>
-      {/* Bootstrap CSS */}
-      <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-      />
+
 
       <div className="container d-flex justify-content-center align-items-center vh-100">
         <div className="card shadow-sm" style={{width: '400px'}}>
@@ -93,7 +89,6 @@ const Register = () => {
         </div>
       </div>
 
-      {/* Bootstrap JS (optional, but recommended for certain components) */}
       <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       ></script>

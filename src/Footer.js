@@ -48,7 +48,6 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Social Media Links Section */}
           <div className="row mb-4">
             <div className="col-md-12 text-center">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
@@ -94,9 +93,7 @@ const Footer = () => {
         `}
       </style>
       
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      ></script>
+     
     </>
   );
 };
