@@ -59,7 +59,7 @@ const Login = () => {
         console.log("Login successful");
         sessionStorage.setItem("isAuthenticated", "true");
         sessionStorage.setItem("userEmail", email);
-        history.push("/dashboard");
+        history.push("/Dashboard");
       } else {
         setError("Invalid email or password");
       }
