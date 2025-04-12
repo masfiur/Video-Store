@@ -57,8 +57,16 @@ const Login = () => {
           responseText === "true") {
         
         console.log("Login successful");
+        
+        // Store user information in sessionStorage
         sessionStorage.setItem("isAuthenticated", "true");
         sessionStorage.setItem("userEmail", email);
+        
+        // If the result contains a token, store it
+        if (typeof result === "object" && result.token) {
+          sessionStorage.setItem("authToken", result.token);
+        }
+        
         history.push("/Dashboard");
       } else {
         setError("Invalid email or password");
