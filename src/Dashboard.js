@@ -19,7 +19,6 @@ const Dashboard = () => {
 
     console.log("Fetching profile for:", userEmail);
     
-    // Build headers with authentication if token exists
     const headers = {
       "Content-Type": "application/json"
     };
@@ -41,29 +40,25 @@ const Dashboard = () => {
           throw new Error(`Failed to fetch user data: ${response.status}`);
         }
         
-        // Try to parse as JSON
         try {
           return text ? JSON.parse(text) : null;
         } catch (e) {
           console.error("Error parsing profile response:", e);
-          // If not JSON, create a simple user object based on the email
           return { email: userEmail, createdAt: new Date().toISOString() };
         }
       })
       .then((data) => {
         if (!data) {
-          // If no data is returned, create a default user object
           setUser({ email: userEmail, createdAt: new Date().toISOString() });
         } else {
           setUser(data);
         }
-        setError(""); // clear error if any
+        setError("");
       })
       .catch((err) => {
         console.error("Error fetching user data:", err);
-        // Create a fallback user object with just the email if profile fetch fails
         setUser({ email: userEmail, createdAt: new Date().toISOString() });
-        setError(null); // Don't show the error since we're handling it gracefully
+        setError(null); 
       })
       .finally(() => {
         setLoading(false);
@@ -72,7 +67,6 @@ const Dashboard = () => {
   }, [history]);
 
   const handleLogout = () => {
-    // Clear all auth-related session storage
     sessionStorage.removeItem("isAuthenticated");
     sessionStorage.removeItem("userEmail");
     sessionStorage.removeItem("authToken");
