@@ -20,9 +20,6 @@ const Login = () => {
       setLoading(true);
       setError("");
 
-      // For debugging - log the request
-      console.log("Attempting login with:", email);
-      
       const formData = new URLSearchParams();
       formData.append("email", email);
       formData.append("password", password);
@@ -33,43 +30,38 @@ const Login = () => {
           "Content-Type": "application/x-www-form-urlencoded",
         },
         body: formData,
-        credentials: "include",
+        credentials: "include", // Important for session cookie
       });
 
-      // Log the raw response for debugging
-      console.log("Response status:", response.status);
-      
-      // Get response as text first to inspect it
       const responseText = await response.text();
-      console.log("Response body:", responseText);
-      
-      // Parse as JSON if possible
       let result;
+
       try {
         result = responseText ? JSON.parse(responseText) : null;
       } catch (e) {
-        console.error("Error parsing JSON:", e);
         result = responseText;
       }
 
-      if (!response.ok) {
-        throw new Error(`Login failed with status: ${response.status}`);
+      if (!response.ok || !(result === true || result?.success === true || result?.authenticated === true)) {
+        throw new Error("Invalid login");
       }
 
-      // Handle the response - be more flexible with what's accepted
-      if (result === true || 
-          (typeof result === "object" && (result.success === true || result.authenticated === true)) ||
-          responseText === "true") {
-        
-        console.log("Login successful");
-        sessionStorage.setItem("isAuthenticated", "true");
-        sessionStorage.setItem("userEmail", email);
-        history.push("/dashboard");
-      } else {
-        setError("Invalid email or password");
+      // Optional: call /profile to confirm session
+      const profileRes = await fetch("https://movieapi-fal9.onrender.com/api/users/profile", {
+        method: "GET",
+        credentials: "include",
+      });
+
+      if (!profileRes.ok) {
+        throw new Error("Profile not accessible after login");
       }
+
+      const profileData = await profileRes.json();
+      console.log("Logged-in user profile:", profileData);
+
+      history.push("/dashboard");
     } catch (err) {
-      setError("Login failed. Please try again.");
+      setError("Login failed. Please check your credentials.");
       console.error("Login error:", err);
     } finally {
       setLoading(false);
