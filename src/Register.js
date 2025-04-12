@@ -38,7 +38,7 @@ const Register = () => {
       formData.append("email", email);
       formData.append("password", password);
       
-      const response = await fetch("http://localhost:8085/api/users/register", {
+      const response = await fetch("https://movieapi-fal9.onrender.com/api/users/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
