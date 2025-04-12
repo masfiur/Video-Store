@@ -39,7 +39,7 @@ function App() {
             <Route path="/tv-shows/:id" component={TVShowDetails} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
-            <ProtectedRoute path="/dashboard" component={Dashboard} />
+            <ProtectedRoute path="/Dashboard" component={Dashboard} />
           </Switch>
           <Footer />
         </Router>
