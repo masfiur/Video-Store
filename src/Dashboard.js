@@ -15,6 +15,9 @@ const Dashboard = () => {
       history.push("/login");
       return;
     }
+
+    console.log("Fetching profile for:", userEmail);
+
     
     const fetchUserData = async () => {
       try {
