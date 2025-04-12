@@ -10,7 +10,7 @@ const FeaturedTVShows = () => {
 
   const featuredTVShows = tvShows.sort(() => 0.5 - Math.random()).slice(0, 4);
 
-  return <FeaturedMedia title="Featured TV Shows" mediaList={featuredTVShows} />;
+  return <FeaturedMedia title="Featured TV Shows" mediaList={featuredTVShows} mediaType="tv-shows" />;
 };
 
 export default FeaturedTVShows;

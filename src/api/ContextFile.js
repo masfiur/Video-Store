@@ -9,7 +9,8 @@ export const MoviesProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://video-store-api.vercel.app/movies")
+    // fetch("https://video-store-api.vercel.app/movies")
+    fetch("https://movieapi-fal9.onrender.com/api/movies/all")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -40,7 +41,8 @@ export const TVShowsProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://video-store-api.vercel.app/tvShows")
+    // fetch("https://video-store-api.vercel.app/tvShows")
+    fetch("https://movieapi-fal9.onrender.com/api/tvshows/all")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

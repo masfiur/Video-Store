@@ -21,6 +21,8 @@ const MediaDetails = ({ mediaType }) => {
     }
   }, [id, mediaType, movies, tvShows, moviesLoading, tvShowsLoading]);
 
+
+  //Render Ratings
   const renderStars = (rating) => {
     const maxStars = 5;
     const filledStars = Math.round((rating / 10) * maxStars);
@@ -70,8 +72,7 @@ const MediaDetails = ({ mediaType }) => {
           <div className="row g-0">
             <div className="col-md-4">
               <div className="p-3">
-                <img
-                  src={media.image || '/images/placeholder.jpg'}
+                <img src={media.image || '/images/placeholder.jpg'}
                   alt={media.title}
                   className="img-fluid rounded"
                   onError={(e) => {e.target.src = '/images/placeholder.jpg'}}
@@ -88,28 +89,9 @@ const MediaDetails = ({ mediaType }) => {
                 {media.genres && (
                   <p className="mb-3">
                     <span className="fw-bold">Genres: </span>
-                    {Array.isArray(media.genres) ? (
-                      media.genres.map((genre, index) => (
-                        <span key={index} className="badge bg-secondary me-2">{genre}</span>
-                      ))
-                    ) : (
-                      <span className="badge bg-secondary me-2">{media.genres}</span>
-                    )}
+                    <span className="badge bg-secondary me-2">{media.genres}</span>
                   </p>
                 )}
-                
-                <div className="row mb-3">
-                  {media.director && (
-                    <div className="col-md-6 mb-2">
-                      <p className="mb-0"><strong>Director:</strong> {media.director}</p>
-                    </div>
-                  )}
-                  {media.year && (
-                    <div className="col-md-6 mb-2">
-                      <p className="mb-0"><strong>Year:</strong> {media.year}</p>
-                    </div>
-                  )}
-                </div>
                 
                 <div className="card mb-4">
                   <div className="card-body bg-light">

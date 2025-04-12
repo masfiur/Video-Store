@@ -7,8 +7,6 @@ const Navbar = () => {
 
   return (
     <>
-      
-
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <Link className="navbar-brand fw-bold" to="/">
@@ -53,8 +51,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      
     </>
   );
 };

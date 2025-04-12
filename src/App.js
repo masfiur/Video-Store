@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
 import Login from "./Login";
 import Register from "./Register";
+import Dashboard from "./Dashboard";
+import ProtectedRoute from "./ProtectedRoute";
 import Hero from "./pages/home/Hero";
 import FeaturedMovies from "./pages/home/featuredsection/FeaturedMovies";
 import FeaturedTVShows from "./pages/home/featuredsection/FeaturedTVShows";
@@ -37,6 +39,7 @@ function App() {
             <Route path="/tv-shows/:id" component={TVShowDetails} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
+            <ProtectedRoute path="/dashboard" component={Dashboard} />
           </Switch>
           <Footer />
         </Router>

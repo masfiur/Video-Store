@@ -10,7 +10,7 @@ const FeaturedMovies = () => {
 
   const featuredMovies = movies.sort(() => 0.5 - Math.random()).slice(0, 4);
 
-  return <FeaturedMedia title="Featured Movies" mediaList={featuredMovies} />;
+  return <FeaturedMedia title="Featured Movies" mediaList={featuredMovies} mediaType="movies" />;
 };
 
 export default FeaturedMovies;

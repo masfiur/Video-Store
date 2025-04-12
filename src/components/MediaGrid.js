@@ -18,13 +18,10 @@ const MediaGrid = ({ title, mediaList, mediaType }) => {
                 <div className="card h-100 shadow" style={{ borderRadius: "15px" }}>
                   <div style={{ height: "480px", borderRadius: "15px", overflow: "hidden" }}>
                     <img 
-                      src={item.image} 
-                      alt={item.title} 
-                      className="card-img-top h-100 w-100" 
-                      style={{ objectFit: "cover" }}
+                      src={item.image} alt={item.title} className="card-img-top h-100 w-100" style={{ objectFit: "cover" }}
                     />
                   </div>
-                  {/* Uncomment if you want to show the title */}
+                  
                   {/* <div className="card-body">
                     <h5 className="card-title text-dark">{item.title}</h5>
                   </div> */}
