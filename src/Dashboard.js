@@ -10,7 +10,7 @@ const Dashboard = () => {
   useEffect(() => {
     const isAuthenticated = sessionStorage.getItem("isAuthenticated");
     const userEmail = sessionStorage.getItem("userEmail");
-    
+
     if (!isAuthenticated || !userEmail) {
       history.push("/login");
       return;
@@ -18,34 +18,33 @@ const Dashboard = () => {
 
     console.log("Fetching profile for:", userEmail);
 
-    
-    const fetchUserData = async () => {
-      try {
-        const response = await fetch(`https://movieapi-fal9.onrender.com/api/users/profile?email=${userEmail}`, {
-          credentials: "include"
-        });
-        
+    fetch(`https://movieapi-fal9.onrender.com/api/users/profile?email=${userEmail}`, {
+      credentials: "include"
+    })
+      .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch user data");
         }
-        
-        const userData = await response.json();
-        setUser(userData);
-      } catch (err) {
+        return response.json();
+      })
+      .then((data) => {
+        setUser(data);
+        setError(""); // clear error if any
+      })
+      .catch((err) => {
         console.error("Error fetching user data:", err);
         setError("Could not load your profile information");
-      } finally {
+      })
+      .finally(() => {
         setLoading(false);
-      }
-    };
-    
-    fetchUserData();
+      });
+
   }, [history]);
-  
+
   const handleLogout = () => {
     sessionStorage.removeItem("isAuthenticated");
     sessionStorage.removeItem("userEmail");
-    
+
     history.push("/");
   };
 
@@ -79,7 +78,7 @@ const Dashboard = () => {
                     <p><strong>Email:</strong> {user?.email}</p>
                     <p><strong>Account Created:</strong> {new Date(user?.createdAt).toLocaleDateString()}</p>
                   </div>
-                  
+
                   <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button className="btn btn-danger" onClick={handleLogout}>
                       Logout
