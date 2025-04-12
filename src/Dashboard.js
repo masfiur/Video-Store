@@ -12,12 +12,10 @@ const Dashboard = () => {
     const userEmail = sessionStorage.getItem("userEmail");
     
     if (!isAuthenticated || !userEmail) {
-      // Redirect to login if not authenticated
       history.push("/login");
       return;
     }
     
-    // Fetch user data
     const fetchUserData = async () => {
       try {
         const response = await fetch(`https://movieapi-fal9.onrender.com/api/users/profile?email=${userEmail}`, {
@@ -42,11 +40,9 @@ const Dashboard = () => {
   }, [history]);
   
   const handleLogout = () => {
-    // Clear authentication data
     sessionStorage.removeItem("isAuthenticated");
     sessionStorage.removeItem("userEmail");
     
-    // Redirect to home page
     history.push("/");
   };
 

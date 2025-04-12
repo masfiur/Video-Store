@@ -13,7 +13,6 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Basic form validation
     if (!email || !password || !confirmPassword) {
       setError("All fields are required");
       return;
@@ -33,7 +32,6 @@ const Register = () => {
       setLoading(true);
       setError("");
       
-      // Create form data
       const formData = new URLSearchParams();
       formData.append("email", email);
       formData.append("password", password);
@@ -54,12 +52,10 @@ const Register = () => {
       
       setSuccess("Registration successful! Redirecting to login...");
       
-      // Clear form
       setEmail("");
       setPassword("");
       setConfirmPassword("");
       
-      // Redirect to login after a short delay
       setTimeout(() => {
         history.push("/login");
       }, 2000);

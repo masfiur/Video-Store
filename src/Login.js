@@ -20,7 +20,6 @@ const Login = () => {
       setLoading(true);
       setError("");
 
-      // For debugging - log the request
       console.log("Attempting login with:", email);
       
       const formData = new URLSearchParams();
@@ -36,14 +35,11 @@ const Login = () => {
         credentials: "include",
       });
 
-      // Log the raw response for debugging
       console.log("Response status:", response.status);
       
-      // Get response as text first to inspect it
       const responseText = await response.text();
       console.log("Response body:", responseText);
       
-      // Parse as JSON if possible
       let result;
       try {
         result = responseText ? JSON.parse(responseText) : null;
@@ -56,7 +52,6 @@ const Login = () => {
         throw new Error(`Login failed with status: ${response.status}`);
       }
 
-      // Handle the response - be more flexible with what's accepted
       if (result === true || 
           (typeof result === "object" && (result.success === true || result.authenticated === true)) ||
           responseText === "true") {
